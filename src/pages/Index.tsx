@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Spotlight from "@/components/Spotlight";
-import { Mail, Phone, Linkedin, Github, ArrowRight } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, ArrowRight, Server, GitBranch, Code2 } from "lucide-react";
+import { SiPython, SiJavascript, SiHtml5, SiCss3, SiReact, SiBootstrap, SiDjango, SiMongodb, SiMysql, SiGit, SiGithub as SiGithubIcon, SiLinux, SiPostman } from "react-icons/si";
 
 const Index = () => {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -25,7 +26,7 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-2">
             <a href="mailto:gunjansonawane462@gmail.com" aria-label="Email"><Mail className="opacity-80 hover:opacity-100 transition" /></a>
-            <a href="#" aria-label="LinkedIn"><Linkedin className="opacity-80 hover:opacity-100 transition" /></a>
+            <a href="https://www.linkedin.com/in/gunjansonawane/" aria-label="LinkedIn"><Linkedin className="opacity-80 hover:opacity-100 transition" /></a>
             <a href="tel:+919923688237" aria-label="Phone"><Phone className="opacity-80 hover:opacity-100 transition" /></a>
           </div>
         </nav>
@@ -38,7 +39,7 @@ const Index = () => {
             <div className="relative rounded-2xl border border-border/60 bg-gradient-to-b from-background to-secondary/30 p-8 md:p-14 overflow-hidden">
               <Spotlight />
               <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs tracking-wide text-muted-foreground">Pune, India • Backend-focused Software Engineer</p>
-              <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight animate-enter">
+              <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight animate-enter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 Gunjan Sonawane
               </h1>
               <p className="mt-4 max-w-2xl text-muted-foreground text-base md:text-lg">
@@ -68,7 +69,7 @@ const Index = () => {
         {/* Experience */}
         <section id="experience" className="container mx-auto py-16 md:py-24">
           <header className="mb-8">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold">Experience</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Experience</h2>
             <p className="text-sm text-muted-foreground">6 months total</p>
           </header>
           <div className="grid gap-6">
@@ -91,12 +92,12 @@ const Index = () => {
         {/* Projects */}
         <section id="projects" className="container mx-auto py-16 md:py-24">
           <header className="mb-8">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold">Projects</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Projects</h2>
             <p className="text-sm text-muted-foreground">A selection of hands-on builds</p>
           </header>
           <div className="grid md:grid-cols-2 gap-6">
             {/* DocAI */}
-            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-xl" aria-labelledby="docai-title">
+            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-[var(--shadow-elevated)] hover:border-transparent bg-gradient-to-b from-background to-secondary/30" aria-labelledby="docai-title">
               <h3 id="docai-title" className="font-semibold group-hover:text-primary">DocAI</h3>
               <p className="mt-2 text-sm text-muted-foreground">Full‑stack collaboration platform with real-time sync using Socket.IO, JWT auth, and autosave with MongoDB.</p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
@@ -108,13 +109,13 @@ const Index = () => {
               </div>
               <div className="mt-4 flex gap-3">
                 <Button variant="link" asChild>
-                  <a href="#" aria-label="View DocAI on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
+                  <a href="https://github.com/gunjansonaw/doc-ai" aria-label="View DocAI on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
                 </Button>
               </div>
             </article>
 
             {/* Real-time Chat */}
-            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-xl" aria-labelledby="chat-title">
+            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-[var(--shadow-elevated)] hover:border-transparent bg-gradient-to-b from-background to-secondary/30" aria-labelledby="chat-title">
               <h3 id="chat-title" className="font-semibold group-hover:text-primary">Real‑time Chat Application</h3>
               <p className="mt-2 text-sm text-muted-foreground">Low-latency chat with Django Channels, WebSockets, and URL-based rooms with async consumers.</p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
@@ -125,13 +126,13 @@ const Index = () => {
               </div>
               <div className="mt-4 flex gap-3">
                 <Button variant="link" asChild>
-                  <a href="#" aria-label="View Chat App on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
+                  <a href="https://github.com/gunjansonaw/chatapp" aria-label="View Chat App on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
                 </Button>
               </div>
             </article>
 
             {/* Lyric Finder */}
-            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-xl" aria-labelledby="lyric-title">
+            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-[var(--shadow-elevated)] hover:border-transparent bg-gradient-to-b from-background to-secondary/30" aria-labelledby="lyric-title">
               <h3 id="lyric-title" className="font-semibold group-hover:text-primary">Lyric Finder Application</h3>
               <p className="mt-2 text-sm text-muted-foreground">Search and display song lyrics with PDF export and dark mode using React and REST APIs.</p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
@@ -141,13 +142,13 @@ const Index = () => {
               </div>
               <div className="mt-4 flex gap-3">
                 <Button variant="link" asChild>
-                  <a href="#" aria-label="View Lyric Finder on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
+                  <a href="https://github.com/gunjansonaw/lyrricsfinder" aria-label="View Lyric Finder on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
                 </Button>
               </div>
             </article>
 
             {/* Social Media Platform */}
-            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-xl" aria-labelledby="smp-title">
+            <article className="group rounded-xl border border-border bg-card p-6 transition-all hover:shadow-[var(--shadow-elevated)] hover:border-transparent bg-gradient-to-b from-background to-secondary/30" aria-labelledby="smp-title">
               <h3 id="smp-title" className="font-semibold group-hover:text-primary">Social Media Platform</h3>
               <p className="mt-2 text-sm text-muted-foreground">Full‑stack platform with authentication, profiles, media uploads, and optimized search (Django ORM).</p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
@@ -157,7 +158,7 @@ const Index = () => {
               </div>
               <div className="mt-4 flex gap-3">
                 <Button variant="link" asChild>
-                  <a href="#" aria-label="View Social Media Platform on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
+                  <a href="https://github.com/gunjansonaw/djangosocialmediasite" aria-label="View Social Media Platform on GitHub" className="inline-flex items-center gap-1">View on GitHub <Github className="size-4" /></a>
                 </Button>
               </div>
             </article>
@@ -167,39 +168,39 @@ const Index = () => {
         {/* Skills */}
         <section id="skills" className="container mx-auto py-16 md:py-24">
           <header className="mb-6">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold">Skills</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Skills</h2>
           </header>
           <div className="grid md:grid-cols-3 gap-6">
             <article className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold">Languages & Frontend</h3>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                <span className="rounded-full bg-secondary px-2 py-1">Python</span>
-                <span className="rounded-full bg-secondary px-2 py-1">JavaScript (ES6+)</span>
-                <span className="rounded-full bg-secondary px-2 py-1">HTML5</span>
-                <span className="rounded-full bg-secondary px-2 py-1">CSS3</span>
-                <span className="rounded-full bg-secondary px-2 py-1">React.js</span>
-                <span className="rounded-full bg-secondary px-2 py-1">Bootstrap</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiPython className="size-3"/> Python</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiJavascript className="size-3"/> JavaScript (ES6+)</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiHtml5 className="size-3"/> HTML5</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiCss3 className="size-3"/> CSS3</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiReact className="size-3"/> React.js</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiBootstrap className="size-3"/> Bootstrap</span>
               </div>
             </article>
             <article className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold">Backend & Databases</h3>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                <span className="rounded-full bg-secondary px-2 py-1">Django</span>
-                <span className="rounded-full bg-secondary px-2 py-1">Django REST Framework</span>
-                <span className="rounded-full bg-secondary px-2 py-1">MongoDB</span>
-                <span className="rounded-full bg-secondary px-2 py-1">MySQL</span>
-                <span className="rounded-full bg-secondary px-2 py-1">RESTful APIs</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiDjango className="size-3"/> Django</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><Code2 className="size-3"/> Django REST Framework</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiMongodb className="size-3"/> MongoDB</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiMysql className="size-3"/> MySQL</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><Server className="size-3"/> RESTful APIs</span>
               </div>
             </article>
             <article className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold">Tools & Practices</h3>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                <span className="rounded-full bg-secondary px-2 py-1">Git</span>
-                <span className="rounded-full bg-secondary px-2 py-1">GitHub</span>
-                <span className="rounded-full bg-secondary px-2 py-1">Linux</span>
-                <span className="rounded-full bg-secondary px-2 py-1">Postman</span>
-                <span className="rounded-full bg-secondary px-2 py-1">VS Code</span>
-                <span className="rounded-full bg-secondary px-2 py-1">Version Control</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiGit className="size-3"/> Git</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiGithubIcon className="size-3"/> GitHub</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiLinux className="size-3"/> Linux</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><SiPostman className="size-3"/> Postman</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><Code2 className="size-3"/> VS Code</span>
+                <span className="rounded-full bg-secondary px-2 py-1 inline-flex items-center gap-1"><GitBranch className="size-3"/> Version Control</span>
               </div>
             </article>
           </div>
@@ -208,7 +209,7 @@ const Index = () => {
         {/* Education */}
         <section id="education" className="container mx-auto py-16 md:py-24">
           <header className="mb-6">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold">Education</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Education</h2>
           </header>
           <article className="rounded-xl border border-border bg-card p-6">
             <h3 className="font-semibold">B.Tech., Computer Engineering</h3>
@@ -219,7 +220,7 @@ const Index = () => {
         {/* Contact */}
         <section id="contact" className="container mx-auto py-16 md:py-24">
           <div className="rounded-2xl border border-border bg-hero-gradient p-8 md:p-12 text-primary-foreground shadow-[var(--shadow-elevated)]">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold">Let’s build something impactful</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Let’s build something impactful</h2>
             <p className="mt-2 max-w-2xl text-sm/relaxed opacity-90">Open to internships and full‑time roles in backend/Full‑stack. I value clean APIs, performance, and thoughtful DX.</p>
             <div className="mt-6 flex flex-wrap gap-4">
               <Button variant="hero" size="lg" asChild>
@@ -237,9 +238,9 @@ const Index = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Gunjan Sonawane</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="inline-flex items-center gap-1 hover:text-primary"><Linkedin className="size-4"/> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/gunjansonawane/" className="inline-flex items-center gap-1 hover:text-primary"><Linkedin className="size-4"/> LinkedIn</a>
             <a href="mailto:gunjansonawane462@gmail.com" className="inline-flex items-center gap-1 hover:text-primary"><Mail className="size-4"/> Email</a>
-            <a href="#" className="inline-flex items-center gap-1 hover:text-primary"><Github className="size-4"/> GitHub</a>
+            <a href="https://github.com/gunjansonaw/" className="inline-flex items-center gap-1 hover:text-primary"><Github className="size-4"/> GitHub</a>
           </div>
         </div>
       </footer>
